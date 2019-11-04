@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='python-docs-theme-technopathy',
-    version='0.2.0',
+    version='0.2.2',
     description='A full width sphinx template for github pages based on python-docs-theme',
     long_description=long_description,
     long_description_content_type="text/markdown",

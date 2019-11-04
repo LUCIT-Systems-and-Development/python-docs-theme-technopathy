@@ -25,5 +25,5 @@ html_context = {'github_repo_url': 'https://github.com/username/repo',
                 'github_repo_name': project}
 ```
 
-## Howto
+Howto
 [https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/](https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/)

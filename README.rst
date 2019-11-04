@@ -1,5 +1,5 @@
-Python Docs Sphinx Theme
-=========================
+Python Docs Sphinx Theme (technopathy.club Edition)
+===================================================
 
 This is the theme for the Python documentation.
 
@@ -12,4 +12,4 @@ trust.
 
 To use the theme, install it into your docs build environment via ``pip``::
 
-    pip install python-docs-theme
+    pip install python-docs-theme-technopathy

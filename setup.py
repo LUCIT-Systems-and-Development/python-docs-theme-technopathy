@@ -25,6 +25,11 @@ setup(
             'python_docs_theme_technopathy = python_docs_theme_technopathy',
         ]
     },
+    project_urls={
+        'Howto': 'https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/',
+        'Source': 'https://github.com/oliver-zehentleitner/python-docs-theme-technopathy',
+    },
+
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Python Software Foundation License',

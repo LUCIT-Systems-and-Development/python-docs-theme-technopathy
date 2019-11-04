@@ -8,9 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='python-docs-theme-technopathy',
-    # Version is date based as year.month[.serial], where serial is used
-    # if multiple releases are needed to address build failures.
-    version='0.1.2',
+    version='0.2.0',
     description='A full width sphinx template for github pages based on python-docs-theme',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -24,8 +22,8 @@ setup(
         ]
     },
     project_urls={
-        'Howto': 'https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/',
         'Source': 'https://github.com/oliver-zehentleitner/python-docs-theme-technopathy',
+        'Howto': 'https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/',
     },
 
     classifiers=[

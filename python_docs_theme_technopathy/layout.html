@@ -1,9 +1,11 @@
 {% extends "classic/layout.html" %}
 
 {% block rootrellink %}
+    {% if github_repo_url %}
     <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt=""
              style="vertical-align: middle; margin-top: -1px"/></li>
     <li><a href="{{github_repo_url}}">{{github_repo_name}}</a>{{ reldelim1 }}</li>
+    {% endif %}
     {% if theme_root_include_title %}
     <a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}
     {% endif %}
@@ -29,7 +31,7 @@
 {% block relbaritems %}
     {%- if pagename != "search" and builder != "singlehtml" and builder != "htmlhelp" %}
     <li class="right">
-        {{ searchbox() }}
+        <a href="search.html" title="Search">search</a>
         {{ reldelim2 }}
     </li>
     {%- endif %}
@@ -48,11 +50,13 @@
     &copy; <a href="{{ pathto('copyright') }}">{% trans %}Copyright{% endtrans %}</a> {{ copyright|e }}.
     <br />
 
-    {% include "footerdonate.html" %}
-    <br />
-
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
     {% if github_repo_url %}{% trans pathto_bugs=theme_issues_url %}<a href="{{ github_repo_url }}/issues">Found a bug</a>?{% endtrans %}{% endif %}
+    <br />
+
+    <img src="{{ pathto('_static/' + theme_python_icon, 1) }}" alt=""/>
+    {% trans %}The <a href="https://www.python.org">Python</a> Software Foundation is a non-profit corporation.{% endtrans %}
+    <a href="https://www.python.org/psf/donations/">{% trans %}Please donate.{% endtrans %}</a>
     <br />
 
     {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}

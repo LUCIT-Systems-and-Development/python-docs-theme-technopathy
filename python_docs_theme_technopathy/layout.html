@@ -1,9 +1,9 @@
 {% extends "classic/layout.html" %}
 
 {% block rootrellink %}
-    <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt=""
+    <li><img src="{{ pathto('_static/' + theme_python_icon, 1) }}" alt=""
              style="vertical-align: middle; margin-top: -1px"/></li>
-    <li><a href="{{github_repo_url}}">{{github_repo_name}}</a>{{ reldelim1 }}</li>
+    <li><a href="{{theme_root_url}}">{{theme_root_name}}</a>{{ reldelim1 }}</li>
     {% if theme_root_include_title %}
     <a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}
     {% endif %}
@@ -13,15 +13,13 @@
 {# modified from sphinx/themes/basic/searchbox.html #}
     {%- if builder != "htmlhelp" %}
     <div class="inline-search" style="display: none" role="search">
-        <div class="flex-container">
-            <form class="inline-search" action="{{ pathto('search') }}" method="get">
-                <input placeholder="{{ _('Quick search') }}" type="text" name="q" />
-                <input type="submit" value="{{ _('Go') }}" />
-                <input type="hidden" name="check_keywords" value="yes" />
-                <input type="hidden" name="area" value="default" />
-            </form>
-        </div>
-	</div>
+        <form class="inline-search" action="{{ pathto('search') }}" method="get">
+          <input placeholder="{{ _('Quick search') }}" type="text" name="q" />
+          <input type="submit" value="{{ _('Go') }}" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+    </div>
     <script type="text/javascript">$('.inline-search').show(0);</script>
     {%- endif %}
 {%- endmacro %}
@@ -58,9 +56,8 @@
     <br />
 
     {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
-
     <br />
-    <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/">
-        {% trans %}Create a GitHub Page like this one!{% endtrans %}</a>
+        <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/">
+    Create a GitHub Page like this one!</a>
     </div>
 {% endblock %}

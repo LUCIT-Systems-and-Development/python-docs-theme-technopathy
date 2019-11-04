@@ -1,7 +1,9 @@
 Python Docs Sphinx Theme (technopathy.club Edition)
 ===================================================
 
-This is the theme for the Python documentation.
+Forked from: https://github.com/python/python-docs-theme
+
+This is the theme for the Python documentation!
 
 Note that when adopting this theme, you're also borrowing an element of the
 trust and credibility established by the CPython core developers over the

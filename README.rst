@@ -16,7 +16,10 @@ trust.
 Installation
 ------------
 To use the theme, install it into your docs build environment via ``pip``:
+
 pip install python-docs-theme-technopathy
+
+https://pypi.org/project/python-docs-theme-technopathy/
 
 Howto
 -----

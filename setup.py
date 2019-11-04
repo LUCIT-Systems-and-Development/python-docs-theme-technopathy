@@ -10,20 +10,19 @@ with io.open('README.rst', encoding='utf-8') as readme_file:
 
 
 setup(
-    name='python-docs-theme',
+    name='python-docs-theme-technopathy',
     # Version is date based as year.month[.serial], where serial is used
     # if multiple releases are needed to address build failures.
-    version='2018.7',
-    description='The Sphinx theme for the CPython docs and related projects',
+    version='0.1.0',
+    description='Sphinx template for github pages',
     long_description=long_description,
-    author='PyPA',
-    author_email='distutils-sig@python.org',
-    url='https://docs.python.org',
-    packages=['python_docs_theme'],
+    author='Oliver Zehentleitner',
+    url='https://about.me/oliver-zehentleitner',
+    packages=['python_docs_theme_technopathy'],
     include_package_data=True,
     entry_points={
         'sphinx.html_themes': [
-            'python_docs_theme = python_docs_theme',
+            'python_docs_theme_technopathy = python_docs_theme_technopathy',
         ]
     },
     classifiers=[

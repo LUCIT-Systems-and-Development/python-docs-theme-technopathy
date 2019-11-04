@@ -52,7 +52,7 @@
     <br />
 
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    {% if theme_issues_url %}{% trans pathto_bugs=theme_issues_url %}<a href="{{ theme_issues_url }}">Found a bug</a>?{% endtrans %}{% endif %}
+    {% if github_repo_url %}{% trans pathto_bugs=theme_issues_url %}<a href="{{ github_repo_url }}/issues">Found a bug</a>?{% endtrans %}{% endif %}
     <br />
 
     {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}

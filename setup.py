@@ -13,7 +13,7 @@ setup(
     name='python-docs-theme-technopathy',
     # Version is date based as year.month[.serial], where serial is used
     # if multiple releases are needed to address build failures.
-    version='0.1.0',
+    version='0.1.1',
     description='Sphinx template for github pages',
     long_description=long_description,
     author='Oliver Zehentleitner',

@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 
+import io
 from setuptools import setup
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-
+with io.open('README.rst', encoding='utf-8') as readme_file:
+    long_description = readme_file.read()
 
 setup(
     name='python-docs-theme-technopathy',
-    version='0.2.2',
+    version='0.2.4',
     description='A full width sphinx template for github pages based on python-docs-theme',
     long_description=long_description,
-    long_description_content_type="text/markdown",
     author='Oliver Zehentleitner',
     url='https://about.me/oliver-zehentleitner',
     packages=['python_docs_theme_technopathy'],

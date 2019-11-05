@@ -1,3 +1,11 @@
+
+.. image:: https://img.shields.io/badge/PyPI-yes-brightgreen.svg?color=orange
+  :alt: PyPi yes
+.. image:: https://img.shields.io/pypi/wheel/python-docs-theme-technopathy.svg?label=PyPI%20wheel&color=orange
+  :alt: PyPi wheel
+.. image:: https://img.shields.io/pypi/dm/python-docs-theme-technopathy.svg?label=PyPI%20downloads&color=orange
+  :alt: PyPi downloads
+
 Python Docs Sphinx Theme (technopathy.club Edition)
 ===================================================
 Forked from https://github.com/python/python-docs-theme

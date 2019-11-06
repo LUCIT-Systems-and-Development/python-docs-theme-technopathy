@@ -3,20 +3,7 @@
 
 Python Docs Sphinx Theme (technopathy.club Edition)
 ===================================================
-Forked from https://github.com/python/python-docs-theme which is based on
-https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/default which is based on
-https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/basic
-
-Note from the original author
------------------------------
-This is the theme for the Python documentation!
-
-Note that when adopting this theme, you're also borrowing an element of the
-trust and credibility established by the CPython core developers over the
-years. That's fine, and you're welcome to do so for other Python community
-projects if you so choose, but please keep in mind that in doing so you're also
-choosing to accept some of the responsibility for maintaining that collective
-trust.
+Forked from https://github.com/python/python-docs-theme
 
 Installation
 ------------
@@ -37,3 +24,8 @@ settings for source/conf.py:
 html_theme = \'python_docs_theme_technopathy\'
 html_context = \{\'github_user_name\': \'your_user\', \'github_repo_name\': \'your_repository\', \'project_name\': project\}
 
+
+elements are inherited by:
+
+https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/default
+https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/basic

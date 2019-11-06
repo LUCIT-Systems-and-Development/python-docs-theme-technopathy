@@ -1,10 +1,10 @@
 {% extends "classic/layout.html" %}
 
 {% block rootrellink %}
-    {% if github_repo_url %}
+    {% if github_repo_name and github_user_name %}
     <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt=""
              style="vertical-align: middle; margin-top: -1px"/></li>
-    <li><a href="{{github_repo_url}}">{{github_repo_name}}</a>{{ reldelim1 }}</li>
+    <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{ reldelim1 }}</li>
     {% endif %}
     {% if theme_root_include_title %}
     <a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}
@@ -12,7 +12,6 @@
 {% endblock %}
 
 {%- macro searchbox() %}
-{# modified from sphinx/themes/basic/searchbox.html #}
     {%- if builder != "htmlhelp" %}
     <div class="inline-search" style="display: none" role="search">
         <form class="inline-search" action="{{ pathto('search') }}" method="get">
@@ -24,6 +23,7 @@
     </div>
     <script type="text/javascript">$('.inline-search').show(0);</script>
     {%- endif %}
+    <iframe src="https://ghbtns.com/github-btn.html?user={{ github_user_name }}&repo={{ github_repo_name }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 {%- endmacro %}
 
 {% block relbar1 %} {% if builder != 'qthelp' %} {{ relbar() }} {% endif %} {% endblock %}

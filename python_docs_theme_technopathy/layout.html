@@ -11,21 +11,6 @@
     {% endif %}
 {% endblock %}
 
-{%- macro searchbox() %}
-    {%- if builder != "htmlhelp" %}
-    <div class="inline-search" style="display: none" role="search">
-        <form class="inline-search" action="{{ pathto('search') }}" method="get">
-          <input placeholder="{{ _('Quick search') }}" type="text" name="q" />
-          <input type="submit" value="{{ _('Go') }}" />
-          <input type="hidden" name="check_keywords" value="yes" />
-          <input type="hidden" name="area" value="default" />
-        </form>
-    </div>
-    <script type="text/javascript">$('.inline-search').show(0);</script>
-    {%- endif %}
-    <iframe src="https://ghbtns.com/github-btn.html?user={{ github_user_name }}&repo={{ github_repo_name }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-{%- endmacro %}
-
 {% block relbar1 %} {% if builder != 'qthelp' %} {{ relbar() }} {% endif %} {% endblock %}
 {% block relbar2 %} {% if builder != 'qthelp' %} {{ relbar() }} {% endif %} {% endblock %}
 {% block relbaritems %}
@@ -51,7 +36,7 @@
     <br />
 
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    {% if github_repo_url %}{% trans pathto_bugs=theme_issues_url %}<a href="{{ github_repo_url }}/issues">Found a bug</a>?{% endtrans %}{% endif %}
+    {% if github_repo_name and github_user_name %}{% trans pathto_bugs=theme_issues_url %}<a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a>?{% endtrans %}{% endif %}
     <br />
 
     <img src="{{ pathto('_static/' + theme_python_icon, 1) }}" alt="" style="vertical-align: middle; margin-top: -1px" />

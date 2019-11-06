@@ -15,7 +15,7 @@ https://pypi.org/project/python-docs-theme-technopathy/
 
 Howto
 -----
-https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/
+https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-theme/
 
 Documentation
 -------------

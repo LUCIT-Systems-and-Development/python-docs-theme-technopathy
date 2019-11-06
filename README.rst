@@ -19,13 +19,14 @@ https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-h
 
 Documentation
 -------------
-settings for source/conf.py:
+Settings for source/conf.py:
 
 html_theme = \'python_docs_theme_technopathy\'
+
 html_context = \{\'github_user_name\': \'your_user\', \'github_repo_name\': \'your_repository\', \'project_name\': project\}
 
 
-elements are inherited by:
+Elements are inherited by:
 
 https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/default
 https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/basic

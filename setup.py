@@ -7,7 +7,7 @@ with io.open('README.rst', encoding='utf-8') as readme_file:
     long_description = readme_file.read()
 setup(
     name='python-docs-theme-technopathy',
-    version='0.4.4',
+    version='0.4.9',
     description='A full width sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
     author='Oliver Zehentleitner',

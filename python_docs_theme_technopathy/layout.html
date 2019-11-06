@@ -23,6 +23,17 @@
         </form>
     </div>
     <script type="text/javascript">$('.inline-search').show(0);</script>
+    <div class="github_wrap">
+      <a class="github" href="{{github_repo_url}}" target="_blank">
+        <span class="github_icon"></span>
+        <span class="github_stars">
+          <strong>-</strong>stars
+        </span>
+        <span class="github_forks">
+          <strong>-</strong>forks
+        </span>
+      </a>
+    </div>
     {%- endif %}
 {%- endmacro %}
 
@@ -63,7 +74,7 @@
         with <a href="https://github.com/oliver-zehentleitner/python-docs-theme-technopathy">python-docs-theme-technopathy</a>
         by <a href="https://about.me/oliver-zehentleitner">Oliver Zehentleitner</a>.
     <br />
-        <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/">
+        <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-theme">
     Create a GitHub Page like this one!</a>
     </div>
 {% endblock %}

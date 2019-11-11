@@ -1,8 +1,23 @@
 {% if github_repo_name and github_user_name %}
-<iframe src="https://ghbtns.com/github-btn.html?user={{ github_user_name }}&repo={{ github_repo_name }}&type=star&count=true"
-        frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-<iframe src="https://ghbtns.com/github-btn.html?user={{ github_user_name }}&repo={{ github_repo_name }}&type=watch&count=true&v=2"
-        frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-<iframe src="https://ghbtns.com/github-btn.html?user={{ github_user_name }}&repo={{ github_repo_name }}&type=fork&count=true"
-        frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+<a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star {{ github_user_name }}/{{ github_repo_name }} on GitHub">Star</a>
+<br />
+<a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/subscription"
+   data-icon="octicon-eye" data-show-count="true"
+   aria-label="Watch {{ github_user_name }}/{{ github_repo_name }} on GitHub">Watch</a>
+<br />
+<a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/fork"
+   data-icon="octicon-repo-forked" data-show-count="true"
+   aria-label="Fork {{ github_user_name }}/{{ github_repo_name }} on GitHub">Fork</a>
+<br />
+<a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues"
+   data-icon="octicon-issue-opened"
+   data-show-count="true" aria-label="Issue {{ github_user_name }}/{{ github_repo_name }} on GitHub">Issue</a>
+    {% if show_github_download_btn %}
+        <br />
+        <a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/archive/master.zip"
+           data-icon="octicon-cloud-download"
+           aria-label="Download {{ github_user_name }}/{{ github_repo_name }} on GitHub">Download</a>
+    {% endif %}
 {% endif %}

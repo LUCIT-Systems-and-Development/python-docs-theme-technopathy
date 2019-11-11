@@ -24,6 +24,7 @@
 
 {% block extrahead %}
     <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     {% if builder != "htmlhelp" %}
     {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}
     {% endif %}

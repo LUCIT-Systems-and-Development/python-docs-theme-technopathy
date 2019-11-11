@@ -23,7 +23,7 @@ Settings for source/conf.py:
 
 html_theme = \'python_docs_theme_technopathy\'
 
-html_context = \{\'github_user_name\': \'your_user\', \'github_repo_name\': \'your_repository\', \'project_name\': project\}
+html_context = \{\'github_user_name\': \'your_user\', \'github_repo_name\': \'your_repository\', \'project_name\': project\, \'show_github_download_btn\': True\}
 
 
 Elements are inherited by:

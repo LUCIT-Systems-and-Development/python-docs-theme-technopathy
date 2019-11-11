@@ -342,11 +342,6 @@ dl > dt span ~ em {
     .footer {
         width: auto;
     }
-
-    iframe {
-        display: list-item;
-        margin-bottom: 10px;
-    }
 }
 
 

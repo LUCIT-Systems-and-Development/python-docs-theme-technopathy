@@ -7,8 +7,8 @@ with io.open('README.rst', encoding='utf-8') as readme_file:
     long_description = readme_file.read()
 setup(
     name='python-docs-theme-technopathy',
-    version='0.7.4',
-    description='A sphinx theme for github pages based on python-docs-theme (mobile and desktop)',
+    version='0.7.8',
+    description='A responsive sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
     author='Oliver Zehentleitner',
     url='https://about.me/oliver-zehentleitner',

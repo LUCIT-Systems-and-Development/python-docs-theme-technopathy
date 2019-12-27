@@ -5,6 +5,7 @@ from setuptools import setup
 
 with io.open('README.rst', encoding='utf-8') as readme_file:
     long_description = readme_file.read()
+
 setup(
     name='python-docs-theme-technopathy',
     version='0.7.8',

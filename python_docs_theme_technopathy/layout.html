@@ -22,20 +22,30 @@
     {%- endif %}
 {% endblock %}
 
-<link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<div class="footer">
-    <a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a> <br />
-    {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
-    &copy; <a href="{{ pathto('copyright') }}">{% trans %}Copyright{% endtrans %}</a> {{ copyright|e }}. <br />
-    {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}{% endtrans %}
-    with <a href="https://github.com/oliver-zehentleitner/python-docs-theme-technopathy">python-docs-theme-technopathy</a>
-    by <a href="https://about.me/oliver-zehentleitner">Oliver Zehentleitner</a>.<br />
-    <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-theme">
-    Create a GitHub Page like this one!</a><br />
-    Sponsored by <a href="https://www.lucit.tech">LUCIT Systems and Development</a>
-</div>
+{% block extrahead %}
+    <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    {% if builder != "htmlhelp" %}
+    {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}
+    {% endif %}
+    {{ super() }}
+{% endblock %}
 
 {% block footer %}
-    {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}
+    <div class="footer">
+        {% if github_repo_name and github_user_name %}{% trans pathto_bugs=theme_issues_url %}<a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a>?{% endtrans %}{% endif %}
+        <br />
+        {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+        <br />
+        &copy; <a href="{{ pathto('copyright') }}">{% trans %}Copyright{% endtrans %}</a> {{ copyright|e }}.
+        <br />
+
+    {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}{% endtrans %}
+        with <a href="https://github.com/oliver-zehentleitner/python-docs-theme-technopathy">python-docs-theme-technopathy</a>
+        by <a href="https://about.me/oliver-zehentleitner">Oliver Zehentleitner</a>.
+    <br />
+        <a href="https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-theme">
+    Create a GitHub Page like this one!</a>    <br />
+        Sponsored by <a href="https://www.lucit.tech">LUCIT Development</a>
+    </div>
 {% endblock %}

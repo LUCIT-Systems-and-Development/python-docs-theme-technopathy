@@ -27,8 +27,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     {% if builder != "htmlhelp" %}
 <div class="footer">
-    {% if github_repo_name and github_user_name %}{% trans pathto_bugs=theme_issues_url %}
-    <a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a> <br />?{% endtrans %}{% endif %}
+    <a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a> <br />
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
     &copy; <a href="{{ pathto('copyright') }}">{% trans %}Copyright{% endtrans %}</a> {{ copyright|e }}. <br />
     {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}{% endtrans %}

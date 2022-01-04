@@ -22,10 +22,8 @@
     {%- endif %}
 {% endblock %}
 
-{% block extrahead %}
-    <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    {% if builder != "htmlhelp" %}
+<link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <div class="footer">
     <a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}/issues">Found a bug</a> <br />
     {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
@@ -37,9 +35,6 @@
     Create a GitHub Page like this one!</a><br />
     Sponsored by <a href="https://www.lucit.tech">LUCIT Systems and Development</a>
 </div>
-{% endif %}
-    {{ super() }}
-{% endblock %}
 
 {% block footer %}
     {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}

@@ -1,4 +1,5 @@
 {% if github_repo_name and github_user_name %}
+<li>
 <a class="github-button" href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}"
    data-icon="octicon-star" data-show-count="true"
    aria-label="Star {{ github_user_name }}/{{ github_repo_name }} on GitHub">Star</a>
@@ -20,4 +21,5 @@
            data-icon="octicon-cloud-download"
            aria-label="Download {{ github_user_name }}/{{ github_repo_name }} on GitHub">Download</a>
     {% endif %}
+</li>
 {% endif %}

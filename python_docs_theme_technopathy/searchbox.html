@@ -7,6 +7,16 @@
     :copyright: Copyright 2007-2019 by the Sphinx team, see AUTHORS.
     :license: BSD, see LICENSE for details.
 #}
+{%- if builder != "singlehtml" %}
+    <div role="note" aria-label="source code">
+        <h3>Source Code</h3>
+        <ul class="this-page-menu">
+          <li><a href=https://github.com/{{ github_user_name }}/{{ github_repo_name }}">Show Source</a></li>
+          {% include "github.html" %}
+        </ul>
+    </div>
+
+{%- endif %}
 {%- if pagename != "search" and builder != "singlehtml" %}
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">{{ _('Quick search') }}</h3>
@@ -20,9 +30,7 @@
 <script type="text/javascript">$('#searchbox').show(0);</script>
 <br />
 {%- endif %}
-{%- if builder != "singlehtml" %}
-    {% include "github.html" %}
-{%- endif %}
+
 <div style="text-align: center">
     <br>
     <a href="https://www.lucit.tech"><img src="https://www.lucit.tech/files/images/logos/LUCIT-LOGO.png"></a>

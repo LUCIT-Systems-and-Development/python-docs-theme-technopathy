@@ -1,13 +1,13 @@
 {% extends "classic/layout.html" %}
 
 {% block rootrellink %}
-    {% if github_repo_name and github_user_name %}
-    <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt=""
+    {% if github_repo_name %}
+    <li><img src="{{ pathto('_static/' + theme_lucit_icon, 1) }}" alt="LUCIT Logo"
              style="vertical-align: middle; margin-top: -1px"/></li>
-    <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{ reldelim1 }}</li>
+    <li><a href="https://www.lucit.tech/{{github_repo_name}}.html">{{project_name}}</a>{{reldelim1}}</li>
     {% endif %}
     {% if theme_root_include_title %}
-    <a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}
+    <a href="{{ pathto('index') }}">{{shorttitle}}</a>{{reldelim1}}
     {% endif %}
 {% endblock %}
 
@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block extrahead %}
-    <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_python_icon, 1) }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ pathto('_static/' + theme_lucit_icon, 1) }}" />
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     {% if builder != "htmlhelp" %}
     {% if not embedded %}<script type="text/javascript" src="{{ pathto('_static/copybutton.js', 1) }}"></script>{% endif %}

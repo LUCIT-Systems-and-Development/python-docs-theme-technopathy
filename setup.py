@@ -8,12 +8,12 @@ with io.open('README.md', encoding='utf-8') as readme_file:
 
 setup(
     name='python-docs-theme-technopathy',
-    version='0.8.3',
+    version='0.8.4',
     description='A responsive sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Oliver Zehentleitner',
-    url='https://about.me/oliver-zehentleitner',
+    url='https://www.lucit.tech',
     packages=['python_docs_theme_technopathy'],
     include_package_data=True,
     entry_points={

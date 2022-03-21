@@ -11,6 +11,7 @@ setup(
     version='0.8.2',
     description='A responsive sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author='Oliver Zehentleitner',
     url='https://about.me/oliver-zehentleitner',
     packages=['python_docs_theme_technopathy'],

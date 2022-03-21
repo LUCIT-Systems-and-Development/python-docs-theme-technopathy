@@ -22,9 +22,10 @@ https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-h
 ## Documentation
 Settings for source/conf.py:
 ```
-html_theme = 'python_docs_theme_technopathy'
-
-html_context = {'github_user_name': 'your_user', 'github_repo_name': 'your_repository', 'project_name': project, 'show_github_download_btn': True}
+tml_theme = 'python_docs_theme_technopathy'
+html_context = {'github_repo_name': 'python-simplemachinesforum',
+                'github_user_name': 'oliver-zehentleitner',
+                'project_name': project}
 ```
 Demo conf.py: https://github.com/LUCIT-Systems-and-Development/python-simplemachinesforum/blob/master/sphinx/source/conf.py
 

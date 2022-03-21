@@ -28,7 +28,7 @@ setup(
 
     classifiers=[
         'Intended Audience :: Developers',
-        'Development Status :: 5 - Stable',
+        'Development Status :: 5 - Production/Stable',
         'Framework :: Sphinx',
         'Framework :: Sphinx :: Theme',
         'License :: OSI Approved :: Python Software Foundation License',

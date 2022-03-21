@@ -31,3 +31,11 @@ Demo conf.py: https://github.com/oliver-zehentleitner/python-simplemachinesforum
 ### Elements are inherited by:
 - https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/default
 - https://github.com/sphinx-doc/sphinx/tree/master/sphinx/themes/basic
+
+## Commercial Support
+[![LUCIT](https://www.lucit.tech/files/images/logos/LUCIT-LOGO-TRANS-PLAIN-NEW.png)](https://www.lucit.tech)
+
+***Do you need a developer, operator or consultant?***
+
+Contact [me](https://about.me/oliver-zehentleitner) for a non-binding initial consultation via my company 
+[LUCIT](https://www.lucit.tech) from Vienna (Austria) or via [Telegram](https://t.me/LUCIT_OZ)/[WhatsApp](https://wa.me/436602456535).

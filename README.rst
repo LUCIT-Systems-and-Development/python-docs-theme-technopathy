@@ -1,5 +1,10 @@
-.. image:: https://img.shields.io/pypi/dm/python-docs-theme-technopathy.svg?label=PyPI%20downloads&color=orange
-   :alt: PyPi downloads
+.. image:: https://img.shields.io/pypi/v/simplemachinesforum?color=blue
+   :alt: PyPi Release
+.. image:: https://pepy.tech/badge/simplemachinesforum
+   :alt: PyPi Downloads (all)
+.. image:: https://pepy.tech/badge/simplemachinesforum/month
+   :alt: PyPi Downloads (monthly)
+
 
 Python Docs Sphinx Theme (technopathy.club Edition)
 ===================================================

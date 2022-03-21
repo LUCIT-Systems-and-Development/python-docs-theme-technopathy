@@ -2,9 +2,16 @@
 
 {% block rootrellink %}
     {% if github_repo_name %}
+        {% if !lucit %}
+    <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo"
+             style="vertical-align: middle; margin-top: -1px"/></li>
+    <li><a href="https://www.lucit.tech/{{github_repo_name}}.html">{{project_name}}</a>{{reldelim1}}</li>
+        {% endif %}
+        {% if lucit %}
     <li><img src="{{ pathto('_static/' + theme_lucit_icon, 1) }}" alt="LUCIT Logo"
              style="vertical-align: middle; margin-top: -1px"/></li>
     <li><a href="https://www.lucit.tech/{{github_repo_name}}.html">{{project_name}}</a>{{reldelim1}}</li>
+        {% endif %}
     {% endif %}
     {% if theme_root_include_title %}
     <a href="{{ pathto('index') }}">{{shorttitle}}</a>{{reldelim1}}

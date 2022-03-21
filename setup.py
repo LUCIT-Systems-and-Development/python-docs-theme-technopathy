@@ -8,7 +8,7 @@ with io.open('README.md', encoding='utf-8') as readme_file:
 
 setup(
     name='python-docs-theme-technopathy',
-    version='0.8.2',
+    version='0.8.3',
     description='A responsive sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
     long_description_content_type="text/markdown",

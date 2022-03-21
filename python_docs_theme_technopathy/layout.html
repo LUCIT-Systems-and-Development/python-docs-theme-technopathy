@@ -2,7 +2,7 @@
 
 {% block rootrellink %}
     {% if github_repo_name %}
-        {% if !lucit %}
+        {% if not lucit %}
     <li><img src="{{ pathto('_static/' + theme_github_icon, 1) }}" alt="GitHub Logo"
              style="vertical-align: middle; margin-top: -1px"/></li>
     <li><a href="https://github.com/{{ github_user_name }}/{{ github_repo_name }}">{{project_name}}</a>{{ reldelim1 }}</li>

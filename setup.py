@@ -8,7 +8,7 @@ with io.open('README.md', encoding='utf-8') as readme_file:
 
 setup(
     name='python-docs-theme-technopathy',
-    version='0.8.5',
+    version='0.9.0',
     description='A responsive sphinx theme for github pages based on python-docs-theme',
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -22,9 +22,9 @@ setup(
         ]
     },
     project_urls={
-        'Source': 'https://github.com/oliver-zehentleitner/python-docs-theme-technopathy',
+        'Source': 'https://github.com/LUCIT-Systems-and-Development/python-docs-theme-technopathy',
         'Howto': 'https://www.technopathy.club/2019/11/03/use-python-sphinx-on-github-pages-with-html-and-an-indivdual-template/',
-        'Author': 'https://about.me/oliver-zehentleitner',
+        'Author': 'https://www.lucit.tech',
     },
 
     classifiers=[
